@@ -12,13 +12,6 @@ import org.springframework.dao.DataIntegrityViolationException;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 
-/**
- * Ticket: ANIMAL-3 (see README).
- * findByStatus_shouldReturnOnlyMatchingAnimals is already implemented —
- * mirror this pattern (and AdopterRepositoryTest's constraint test) to add
- * the second method yourself. You'll also need to create
- * AdoptionRecordRepositoryTest from scratch (see README).
- */
 @DataJpaTest
 class AnimalRepositoryTest {
 

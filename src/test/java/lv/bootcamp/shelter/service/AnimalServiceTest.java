@@ -2,7 +2,6 @@ package lv.bootcamp.shelter.service;
 
 import lv.bootcamp.shelter.client.NotificationClient;
 import lv.bootcamp.shelter.dto.*;
-import lv.bootcamp.shelter.model.Adopter;
 import lv.bootcamp.shelter.model.Animal;
 import lv.bootcamp.shelter.model.AnimalStatus;
 import lv.bootcamp.shelter.model.AnimalType;
@@ -25,11 +24,6 @@ import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.ArgumentMatchers.eq;
 import static org.mockito.Mockito.*;
 
-/**
- * Ticket: ANIMAL-1 (see README).
- * Three tests are already implemented as a worked example (also see
- * AdopterServiceTest for the same pattern) — add the remaining tests yourself.
- */
 @ExtendWith(MockitoExtension.class)
 class AnimalServiceTest {
 

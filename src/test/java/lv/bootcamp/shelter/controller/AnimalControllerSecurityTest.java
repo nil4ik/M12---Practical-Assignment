@@ -14,18 +14,6 @@ import static org.mockito.Mockito.doNothing;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.delete;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
-/**
- * Already implemented — read this as the reference pattern for testing
- * secured endpoints with MockMvc (not one of your tickets).
- * <p>
- * DELETE /api/animals/{id} is restricted to ROLE_ADMIN (see SecurityConfig).
- * Use @WithMockUser to fake an authenticated principal for a test method;
- * omit it to simulate an anonymous (unauthenticated) request.
- * <p>
- * @WebMvcTest does not load SecurityConfig automatically (it only scans
- * controllers/filters, not regular @Configuration classes) — that's why it's
- * pulled in explicitly with @Import below.
- */
 @WebMvcTest(AnimalController.class)
 @Import(SecurityConfig.class)
 class AnimalControllerSecurityTest {

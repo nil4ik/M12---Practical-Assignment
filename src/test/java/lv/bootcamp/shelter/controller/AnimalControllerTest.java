@@ -25,16 +25,6 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
-/**
- * Ticket: ANIMAL-2 (see README).
- * findById_shouldReturn404WhenNotFound is already implemented as a worked
- * example (also see AdopterControllerTest for the same pattern) — add the
- * remaining tests yourself.
- * <p>
- * @Import(SecurityConfig.class) is required: without it, this slice falls
- * back to Spring Boot's default "require auth for everything" security
- * instead of this project's actual (permissive, for these endpoints) rules.
- */
 @WebMvcTest(AnimalController.class)
 @Import(SecurityConfig.class)
 class AnimalControllerTest {

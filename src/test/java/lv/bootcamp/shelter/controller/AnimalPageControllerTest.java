@@ -19,18 +19,6 @@ import static org.mockito.Mockito.when;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
-/**
- * Already implemented — read this as the reference pattern for testing a
- * view-returning @Controller (not one of your tickets).
- * <p>
- * A @Controller returns a view name, not JSON. The test setup is identical
- * to a REST controller, but the assertions are different: use view().name()
- * and model().attribute() instead of jsonPath().
- * <p>
- * @Import(SecurityConfig.class) is required: without it, this slice falls
- * back to Spring Boot's default "require auth for everything" security
- * instead of this project's actual rules (/animals is permitAll).
- */
 @WebMvcTest(AnimalPageController.class)
 @Import(SecurityConfig.class)
 class AnimalPageControllerTest {

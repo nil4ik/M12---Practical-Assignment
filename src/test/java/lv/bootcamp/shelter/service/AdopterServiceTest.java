@@ -17,10 +17,6 @@ import static org.assertj.core.api.Assertions.assertThatThrownBy;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.when;
 
-/**
- * Reference example: fully implemented Mockito unit tests for AdopterService.
- * Mirror this pattern for AnimalServiceTest (ANIMAL-1 in the README).
- */
 @ExtendWith(MockitoExtension.class)
 class AdopterServiceTest {
 

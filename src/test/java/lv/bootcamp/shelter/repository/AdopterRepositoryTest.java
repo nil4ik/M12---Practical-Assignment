@@ -10,11 +10,6 @@ import org.springframework.dao.DataIntegrityViolationException;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 
-/**
- * Reference example: fully implemented @DataJpaTest for AdopterRepository,
- * including a uniqueness-constraint test. Mirror this pattern for
- * AnimalRepositoryTest and AdoptionRecordRepositoryTest (ANIMAL-3 in the README).
- */
 @DataJpaTest
 class AdopterRepositoryTest {
 

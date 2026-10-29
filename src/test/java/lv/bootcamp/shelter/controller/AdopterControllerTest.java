@@ -18,14 +18,6 @@ import static org.mockito.Mockito.when;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
-/**
- * Reference example: fully implemented MockMvc tests for AdopterController.
- * Mirror this pattern for AnimalControllerTest (ANIMAL-2 in the README).
- * <p>
- * @Import(SecurityConfig.class) is required here too: without it, this slice
- * falls back to Spring Boot's default "require auth for everything" security
- * instead of this project's actual (permissive, for these endpoints) rules.
- */
 @WebMvcTest(AdopterController.class)
 @Import(SecurityConfig.class)
 class AdopterControllerTest {
